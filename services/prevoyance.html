@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FOS-Agri | Prevoyance medico-sociale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+
+<body class="service-page" data-page="service" data-service="prevoyance">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="../index.html" aria-label="FOS-Agri accueil">
+        <span class="brand-mark"><img src="../logo.png" alt="Logo FOS-Agri" /></span>
+        <span class="brand-copy"><strong>FOS-Agri</strong><small data-i18n="brand.subtitle"></small></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="../index.html" data-i18n="nav.home"></a>
+        <a href="../index.html#about" data-i18n="nav.about"></a>
+        <a href="../index.html#services" data-i18n="nav.services"></a>
+        <a href="../index.html#news" data-i18n="nav.news"></a>
+        <a href="../index.html#events" data-i18n="nav.events"></a>
+        <a href="../index.html#contact" data-i18n="nav.contact"></a>
+
+        <div class="mobile-nav-lang">
+          <button class="lang-btn is-active" type="button" data-lang="fr">FR</button>
+          <button class="lang-btn" type="button" data-lang="ar">AR</button>
+        </div>
+        <a class="member-link mobile-only" href="../index.html#member-space" data-i18n="nav.memberSpace"></a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle desktop-only" role="group" aria-label="Choix de langue">
+          <button class="lang-btn is-active" type="button" data-lang="fr">FR</button>
+          <button class="lang-btn" type="button" data-lang="ar">AR</button>
+        </div>
+        <a class="member-link desktop-only" href="../index.html#member-space" data-i18n="nav.memberSpace"></a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero service-hero">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="service-meta"><i id="service-icon" class="fa-solid fa-heart-pulse"></i><span
+            data-i18n="services.tag"></span></div>
+        <h1 id="service-title"></h1>
+        <p class="hero-description" id="service-description"></p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container service-layout">
+        <article class="service-box">
+          <h3 data-i18n="about.scopeTitle"></h3>
+          <p id="service-detail"></p>
+        </article>
+        <aside class="service-summary">
+          <h3 data-i18n="member.memberTitle"></h3>
+          <ul class="service-list">
+            <li><a href="../index.html#contact" data-i18n="hero.ctaContact"></a></li>
+            <li><a href="../index.html#member-space" data-i18n="member.memberCta"></a></li>
+            <li><a href="../index.html#news" data-i18n="news.title"></a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="brush-sep footer-brush" aria-hidden="true">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" fill="#184f34">
+        <path
+          d="M 0 100 L 0 50 L 1 40.36490049988594 L 2 34.44433655609957 L 3 48.35497315208529 L 4 22.722887809371258 L 5 48.364725402877056 L 6 39.964219249131745 L 7 54.25485376888546 L 8 33.827011721308246 L 9 46.91245948506884 L 10 22.66393253878965 L 11 23.913716005165373 L 12 34.02516288018386 L 13 36.22059672103217 L 14 79.32409335975844 L 15 48.38770972667818 L 16 44.65289027020964 L 17 37.22518097540182 L 18 20.54959988326788 L 19 44.97055863051165 L 20 46.53817726039844 L 21 46.91144306549039 L 22 2.1428631010831865 L 23 46.01246573183019 L 24 26.360750480113488 L 25 24.023015935649717 L 26 27.56389855309072 L 27 39.83747051463037 L 28 48.275116222270064 L 29 37.765128355564215 L 30 32.240295871871076 L 31 21.521609841274252 L 32 47.884754671047276 L 33 14.054811416279144 L 34 33.91889592629689 L 35 54.569969972266705 L 36 21.09075503226927 L 37 43.19935749625289 L 38 40.840694272393264 L 39 26.675550818957557 L 40 34.67774136524008 L 41 24.863515219822162 L 42 69.66282509282223 L 43 41.51478414968612 L 44 16.52426114258853 L 45 25.33758197581063 L 46 22.264809524809024 L 47 27.21284990186264 L 48 33.90397910697699 L 49 47.592519021542515 L 50 36.632166945716506 L 51 44.275146897558976 L 52 44.93652076475844 L 53 43.58060416081045 L 54 34.771485966578766 L 55 16.00446275675111 L 56 66.3096751241408 L 57 45.62218799521918 L 58 22.812231534122173 L 59 49.7917075183495 L 60 45.59931827302343 L 61 32.30876911329173 L 62 24.31993934772516 L 63 53.31842147181679 L 64 37.86903757855229 L 65 33.38700519987802 L 66 15.501547439828336 L 67 23.66805463644396 L 68 40.25416379669095 L 69 47.322638110406714 L 70 79.32637538896606 L 71 22.344047411411832 L 72 33.55883367951025 L 73 44.22862170426519 L 74 25.908922764349775 L 75 47.26511267977661 L 76 27.16658320116941 L 77 55.24989540212764 L 78 36.32791636536575 L 79 46.148132588592304 L 80 29.682724571330507 L 81 46.78968337982814 L 82 24.814435083236095 L 83 34.8963619382767 L 84 55.02947108644307 L 85 21.66928033993591 L 86 23.128792332643105 L 87 44.924698177312656 L 88 5.409692976166518 L 89 47.462122508682 L 90 34.235048755749105 L 91 52.76468225293523 L 92 34.38364547832384 L 93 34.5543046921365 L 94 41.808278811034825 L 95 34.959701507602894 L 96 45.666312408625686 L 97 46.108291667103856 L 98 56.701936891509305 L 99 32.234891079711055 L 100 22.00992923999996 L 100 100 Z" />
+      </svg>
+    </div>
+    <div class="container footer-grid" id="footer-links">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark footer-brand-mark">
+            <img src="../logo.png" alt="Logo FOS-Agri" />
+          </span>
+          <span class="brand-copy">
+            <strong>FOS-Agri</strong>
+            <small data-i18n="brand.subtitle"></small>
+          </span>
+        </a>
+        <p class="footer-copy" data-i18n="footer.about"></p>
+      </div>
+      <div>
+        <h3 data-i18n="footer.usefulTitle"></h3>
+        <ul class="footer-links">
+          <li><a href="#" data-i18n="footer.useful1"></a></li>
+          <li><a href="#" data-i18n="footer.useful2"></a></li>
+          <li><a href="#" data-i18n="footer.useful3"></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.quickTitle"></h3>
+        <ul class="footer-links">
+          <li><a href="../index.html#member-space" data-i18n="footer.quick1"></a></li>
+          <li><a href="../index.html#services" data-i18n="footer.quick2"></a></li>
+          <li><a href="../index.html#news" data-i18n="footer.quick3"></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.contactTitle"></h3>
+        <ul class="footer-links">
+          <li><a href="mailto:fos-agri@fos-agri.ma">fos-agri@fos-agri.ma</a></li>
+          <li><a href="tel:+212537774748"><span data-i18n="contact.phone1"></span></a></li>
+          <li><span data-i18n="contact.address"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p data-i18n="footer.copy"></p>
+      <div class="footer-social">
+        <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/data.js"></script>
+  <script src="../assets/app.js"></script>
+</body>
+
+</html>
