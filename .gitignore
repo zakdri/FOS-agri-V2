@@ -1,6 +1,6 @@
-# Ignore large video files (exceed GitHub 100MB limit)
+# Old large video — too big for GitHub (130MB)
 fos-agri.mp4
-*.mp4
+# Note: Fos-Agri.mp4 (23MB) is allowed and tracked
 
 # OS files
 .DS_Store
