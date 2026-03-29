@@ -1,0 +1,10 @@
+# Ignore large video files (exceed GitHub 100MB limit)
+fos-agri.mp4
+*.mp4
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
