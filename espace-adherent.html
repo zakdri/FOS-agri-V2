@@ -22,19 +22,25 @@
         <span class="brand-copy"><strong>FOS-Agri</strong><small data-i18n="brand.subtitle"></small></span>
       </a>
 
-      <nav class="site-nav" id="site-nav">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"
+        aria-label="Ouvrir le menu">
+        <span class="burger-box">
+          <span class="burger-inner"></span>
+        </span>
+      </button>
+
+      <nav class="site-nav" id="site-menu" aria-label="Navigation principale">
         <a href="index.html" data-i18n="nav.home"></a>
-        <a href="index.html#about" data-i18n="nav.about"></a>
+        <a href="index.html#about" data-i18n="nav.foundation"></a>
         <a href="index.html#services" data-i18n="nav.services"></a>
         <a href="index.html#news" data-i18n="nav.news"></a>
         <a href="index.html#events" data-i18n="nav.events"></a>
         <a href="index.html#contact" data-i18n="nav.contact"></a>
-
-        <div class="mobile-nav-lang">
+        <a class="member-link mobile-only btn-cta-nav" href="index.html#member-space" data-i18n="nav.member"></a>
+        <div class="lang-toggle mobile-nav-lang" role="group" aria-label="Choix de langue">
           <button class="lang-btn is-active" type="button" data-lang="fr">FR</button>
           <button class="lang-btn" type="button" data-lang="ar">AR</button>
         </div>
-        <a class="member-link mobile-only" href="index.html#member-space" data-i18n="nav.memberSpace"></a>
       </nav>
 
       <div class="nav-actions">
@@ -42,12 +48,7 @@
           <button class="lang-btn is-active" type="button" data-lang="fr">FR</button>
           <button class="lang-btn" type="button" data-lang="ar">AR</button>
         </div>
-        <a class="member-link desktop-only" href="index.html#member-space" data-i18n="nav.memberSpace"></a>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
-          <span class="burger-box">
-            <span class="burger-inner"></span>
-          </span>
-        </button>
+        <a class="btn-cta-nav desktop-only" href="index.html#member-space" data-i18n="nav.member"></a>
       </div>
     </div>
   </header>
